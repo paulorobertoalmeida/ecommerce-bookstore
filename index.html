@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .modal-header,.close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+    }
+    .modal-footer {
+      background-color: #f9f9f9;
+    }
+    </style>
+  </head>
+  
+  <body>
+    <!-- Start your project here-->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://dynamic.brandcrowd.com/asset/logo/2ad20eac-d972-4ee3-9b2e-7f9063d690ca/logo?v=4"
+                height="50"
+                alt=""
+                loading="lazy"
+              />
+            </a>
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row">
+              <!-- Icons -->
+              <li class="nav-item mr-3 mr-lg-0">
+                <a class="nav-link" href="#">
+                  <span class="badge badge-pill bg-danger">1</span>
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </a>
+              </li>
+              <li class="nav-item mr-3 mr-lg-0">
+                <a class="nav-link" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <!-- Icon dropdown -->
+              <li class="nav-item mr-3 mr-lg-0 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    
+      <!-- Background image -->
+      <div
+        class="p-5 text-center bg-image shadow-1-strong"
+        style="
+          background-image: url('https://image.freepik.com/vetores-gratis/book-shop-interior-bookstore-clientes-vendas-mulher-cash-desk_48369-5703.jpg');
+          height: 500px;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Bookfy</h1>
+              <h4 class="mb-3">Promotions up to 70%</h4>
+              <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+                >SEE THE PROMOTION OFFER</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+    <main class="mt-5">
+      <div class="container">
+        <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" mb-4>
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+   
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <strong class="text-dark mr-2">Categories:</strong>
+      <!-- Left links -->
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Best-Sellers</a>
+        </li> <li class="nav-item">
+          <a class="nav-link" href="#">Classics</a>
+        </li> <li class="nav-item">
+          <a class="nav-link" href="#">Recomendations</a>
+        </li>
+       
+      <!-- Left links -->
+
+      <!-- Search form -->
+      <form class="d-flex input-group w-auto">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Type query"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-primary" type="button" data-ripple-color="dark">
+          Search
+        </button>
+      </form>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+ <!--Books Section-->
+  <section class="text-center mb4 ">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4"><div class="card">
+        <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+          <img
+            src="https://nice-assets.s3-accelerate.amazonaws.com/smart_templates/e639b9513adc63d37ee4f577433b787b/assets/wn5u193mcjesm2ycxacaltq8jdu68kmu.jpg"
+            class="img-fluid"
+          />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6>$26,90</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the bulk of the
+            card's content.
+          </p>
+          <a href="#!" class="btn btn-primary">Button</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-4"><div class="card">
+      <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+        <img
+          src="https://m.media-amazon.com/images/I/51uHSFHydpL.jpg"
+          class="img-fluid"
+        />
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6>$26,90</h6>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the
+          card's content.
+        </p>
+        <a href="#!" class="btn btn-primary">Button</a>
+      </div>
+    </div>
+    
+    </div>    <div class="col-lg-4 col-md-12 mb-4"><div class="card">
+      <div class="bg-image hover-overlay ripple" data-ripple-color="light">
+        <img
+          src="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
+          class="img-fluid"
+        />
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6>$26,90</h6>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the
+          card's content.
+        </p>
+        <a href="#!" class="btn btn-primary">Button</a>
+      </div>
+      
+    </div>
+    
+  </section>
+
+    </div>
+      <!--Pagination-->
+      <nav aria-label="...">
+        <ul class="pagination pagination-circle d-flex justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+    </section>
+       </div>
+
+       <div class="align-items-center d-flex">
+
+        <div class="container">
+          <h2>Modal Login Example</h2>
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+        
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                      <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                      <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" checked>Remember me</label>
+                    </div>
+                      <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                  <p>Not a member? <a href="#">Sign Up</a></p>
+                  <p>Forgot <a href="#">Password?</a></p>
+                </div>
+              </div>
+              
+            </div>
+          </div> 
+        </div>
+
+       </div>
+
+        
+    </main>
+    <footer>
+      <!-- Footer -->
+<footer class="bg-light text-center text-lg-left">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    </footer>
+  </body>
+
+  <!-- MDB -->
+  <script>
+    $(document).ready(function(){
+      $("#myBtn").click(function(){
+        $("#myModal").modal();
+      });
+    });
+    </script>
+ 
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+  var button = document.getElementById('code-button'); 
+    button.onclick = function() {
+      var div = document.getElementById('code-success');
+      if (div.style.display !== 'none') {
+          div.style.display = 'none';
+      }
+      else {
+          div.style.display = 'block';
+      }
+    };
+
+    function copy(text) {
+      var textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+
+    // Ad counter
+    // Set the date we're counting down to
+    var countDownDate = new Date(Date.UTC(2020, 09, 30, 10, 00, 00));
+    var counterElement = document.getElementById('time-counter');
+
+    // Update the count down every 1 second
+    function startCounter() {
+      //wrapped in an if to prevent console errors if the element isn't found on the page
+      if (counterElement == null) {
+        return;
+      } else {
+        var x = setInterval(function () {
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          counterElement.innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's';
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById('time-counter').innerHTML =
+              '<p class="h3 grey-text">Sale ended :(</p>';
+          }
+        }, 1000);
+      }
+    }
+    });
+
+  </script>
+</html>
